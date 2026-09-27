@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CowShop - Acerca de Nosotros</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+<a href="#main-content" class="sr-only focus:not-sr-only">Saltar al contenido principal</a>
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white shadow fixed w-full z-50">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html">
+      <img src="media/logotipo.png" alt="CowShop" class="h-12">
+    </a>
+
+    <ul class="hidden md:flex gap-6 font-medium">
+      <li><a href="index.html" class="hover:text-green-600">Inicio</a></li>
+      <li><a href="tienda.html" class="hover:text-green-600">Tienda</a></li>
+      <li><a href="Nosotros.html" class="text-green-700 font-bold">Nosotros</a></li>
+      <li><a href="contacto.html" class="hover:text-green-600">Contacto</a></li>
+      <li><a href="planes.html" class="hover:text-green-600">Planes</a></li>
+    </ul>
+
+    <div class="flex items-center gap-4">
+      <a href="carrito.html" class="relative">
+        <i class="fas fa-shopping-cart text-xl text-green-700"></i>
+        <span class="absolute -top-2 -right-2 bg-red-600 text-xs text-white rounded-full px-1">0</span>
+      </a>
+
+      <a href="login.html" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500 transition duration-200 hover:scale-105">Iniciar sesión</a>
+      <a href="registrarse.html" class="border border-green-600 text-green-600 px-4 py-2 rounded hover:bg-green-600 hover:text-white transition duration-200 hover:scale-105">Registrarse</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content" class="pt-28">
+
+<!-- ================= HERO ================= -->
+<section class="bg-green-700 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl lg:text-5xl font-bold">
+        Acerca de <span class="text-yellow-300">Nosotros</span>
+      </h1>
+      <p class="mt-6 text-lg text-green-100">
+        Más que una plataforma, somos un punto de encuentro para apasionados del campo y aliados esenciales para ganaderos.
+      </p>
+      <div class="mt-8 flex gap-4">
+        <a href="tienda.html" class="bg-white text-green-700 px-6 py-3 rounded font-semibold hover:bg-gray-100 transition duration-200 hover:scale-105">
+          Ver tienda
+        </a>
+        <a href="contacto.html" class="border border-white px-6 py-3 rounded hover:bg-white hover:text-green-700 transition duration-200 hover:scale-105">
+          Contáctanos
+        </a>
+      </div>
+    </div>
+
+    <img src="media/cows-4383468_1280-1.jpg" alt="Ganado bovino" class="rounded-xl shadow-lg">
+  </div>
+</section>
+
+<!-- ================= INTRO ================= -->
+<section class="max-w-4xl mx-auto px-6 py-12 text-center">
+  <p class="text-xl font-semibold">
+    Más que una plataforma de ventas, somos un punto de encuentro para los apasionados del campo y un aliado esencial para los ganaderos.
+  </p>
+</section>
+
+<!-- ================= CARDS ================= -->
+<section class="max-w-7xl mx-auto px-6 py-12">
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-white rounded-lg shadow text-center p-6">
+      <img src="media/cebu.png" alt="Cebú" class="mx-auto h-40 w-full object-cover rounded mb-4 transition duration-200 hover:scale-105 cursor-pointer">
+      <p>Aquí no solo encontrarás vacas, sino historias de esfuerzo y tradición.</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow text-center p-6">
+      <img src="media/vaca2.png" alt="Vaca pastando" class="mx-auto h-40 w-full object-cover rounded mb-4 transition duration-200 hover:scale-105 cursor-pointer">
+      <p>Cada animal representa el trabajo incansable del sector ganadero.</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow text-center p-6">
+      <img src="media/gris.jpg" alt="Vaca gris" class="mx-auto h-40 w-full object-cover rounded mb-4 transition duration-200 hover:scale-105 cursor-pointer">
+      <p>Construimos una comunidad que valora el campo y su gente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MISION / VISION ================= -->
+<section class="max-w-7xl mx-auto px-6 py-16 space-y-20">
+
+  <div class="grid lg:grid-cols-2 gap-10 items-center">
+    <img src="media/pardosuiza.jpg" class="rounded-lg shadow transition duration-200 hover:scale-105 cursor-pointer">
+    <div>
+      <h2 class="text-3xl font-bold text-green-700 mb-4">
+        <i class="fas fa-bullseye mr-2"></i>Nuestra Misión
+      </h2>
+      <p>
+        Ofrecer una plataforma confiable para la compra y venta de bovinos de alta calidad,
+        promoviendo bienestar animal, sostenibilidad y transparencia.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-3xl font-bold text-green-700 mb-4">
+        <i class="fas fa-eye mr-2"></i>Nuestra Visión
+      </h2>
+      <p>
+        Ser la plataforma líder en compra y venta de ganado bovino en Cundinamarca,
+        impulsando innovación y crecimiento sostenible.
+      </p>
+    </div>
+    <img src="media/cows-4383468_1280-1.jpg" class="rounded-lg shadow transition duration-200 hover:scale-105 cursor-pointer">
+  </div>
+
+</section>
+
+<!-- ================= PILARES ================= -->
+<section class="bg-white py-16">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-10">Nuestros Pilares</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div>
+        <i class="fas fa-shield-alt text-5xl text-green-700 mb-4"></i>
+        <h3 class="text-4xl font-bold">100+</h3>
+        <p class="text-gray-600">Ganaderos verificados</p>
+      </div>
+
+      <div>
+        <i class="fas fa-heartbeat text-5xl text-green-700 mb-4"></i>
+        <h3 class="text-4xl font-bold">500+</h3>
+        <p class="text-gray-600">Animales certificados</p>
+      </div>
+
+      <div>
+        <i class="fas fa-users text-5xl text-green-700 mb-4"></i>
+        <h3 class="text-4xl font-bold">1500+</h3>
+        <p class="text-gray-600">Miembros activos</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="bg-green-700 text-white py-16 text-center">
+  <h2 class="text-4xl font-bold mb-4">Únete a Nuestra Comunidad</h2>
+  <p class="mb-8">Explora nuestro ganado o contáctanos para más información.</p>
+  <div class="flex justify-center gap-4">
+    <a href="tienda.html" class="bg-white text-green-700 px-6 py-3 rounded font-semibold">Ir a la tienda</a>
+    <a href="contacto.html" class="border border-white px-6 py-3 rounded">Contáctanos</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-[oklch(68.1%_0.162_75.834)] text-white-300 py-10">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+    <div>
+      <h4 class="font-bold text-white mb-4">CowShop</h4>
+      <p class="text-white">Excelencia ganadera y bienestar animal.</p>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Enlaces</h4>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="text-white hover:text-white">Inicio</a></li>
+        <li><a href="tienda.html" class="text-white hover:text-white">Tienda</a></li>
+        <li><a href="Nosotros.html" class="text-white hover:text-white">Nosotros</a></li>
+        <li><a href="contacto.html" class="text-white hover:text-white">Contacto</a></li>
+        <li><a href="planes.html" class="text-white hover:text-white">Planes</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Contacto</h4>
+      <p class="text-white">📍 Bogotá, Colombia</p>
+      <p class="text-white">📧 soporte@cowshop.com</p>
+      <p class="text-white">📞 305 802 8088</p>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Síguenos</h4>
+      <div class="flex gap-4 text-xl">
+        <i class="fab fa-facebook text-[#1877F2] transition duration-200 hover:scale-110 cursor-pointer"></i>
+        <i class="fab fa-instagram text-[#E4405F] transition duration-200 hover:scale-110 cursor-pointer"></i>
+        <i class="fab fa-whatsapp text-[#25D366] transition duration-200 hover:scale-110 cursor-pointer"></i>
+      </div>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Medios de Pago</h4>
+      <div class="flex gap-4 flex-wrap">
+        <img src="media/visa.png" alt="Visa" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/mastercard.png" alt="Mastercard" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/nequi.svg" alt="Nequi" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/daviplata.png" alt="Daviplata" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/efecty.png" alt="Efecty" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/logo-pse.webp" alt="pse" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+      </div>
+    </div>
+  </div>
+
+  <p class="text-center text-white mt-10">© 2026 CowShop. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

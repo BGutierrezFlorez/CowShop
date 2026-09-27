@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CowShop - Revisa tu carrito de compras y completa tu pedido de ganado de alta calidad.">
+    <title>CowShop - Carrito de Compras</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="media/favicon.png">
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<a href="#main-content" class="sr-only focus:not-sr-only">Saltar al contenido principal</a>
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white shadow fixed w-full z-50">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html">
+      <img src="media/logotipo.png" alt="CowShop" class="h-12">
+    </a>
+
+    <ul class="hidden md:flex gap-6 font-medium">
+      <li><a href="index.html" class="hover:text-green-600">Inicio</a></li>
+      <li><a href="tienda.html" class="hover:text-green-600">Tienda</a></li>
+      <li><a href="Nosotros.html" class="hover:text-green-600">Nosotros</a></li>
+      <li><a href="contacto.html" class="hover:text-green-600">Contacto</a></li>
+      <li><a href="planes.html" class="hover:text-green-600">Planes</a></li>
+    </ul>
+
+    <div class="flex items-center gap-4">
+      <a href="carrito.html" class="relative">
+        <i class="fas fa-shopping-cart text-xl text-green-700"></i>
+        <span id="cart-counter" class="absolute -top-2 -right-2 bg-red-600 text-xs text-white rounded-full px-1">0</span>
+      </a>
+
+      <a href="login.html" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500 transition duration-200 hover:scale-105">Iniciar sesión</a>
+      <a href="registrarse.html" class="border border-green-600 text-green-600 px-4 py-2 rounded hover:bg-green-600 hover:text-white transition duration-200 hover:scale-105">Registrarse</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content" class="pt-28 max-w-7xl mx-auto px-4">
+
+    <!-- Breadcrumb -->
+    <nav class="text-sm mb-4 text-gray-500">
+        <a href="index.html" class="hover:underline">Inicio</a> /
+        <a href="tienda.html" class="hover:underline">Tienda</a> /
+        <span class="text-gray-700 font-medium">Carrito</span>
+    </nav>
+
+    <!-- Título -->
+    <section class="text-center mb-8">
+        <h1 class="text-4xl font-bold mb-2">Tu Carrito de Compras</h1>
+        <p class="text-gray-500">Revisa tus ejemplares y finaliza la compra</p>
+    </section>
+
+    <!-- Alertas -->
+    <div id="alert-container" class="mb-6"></div>
+
+    <!-- Grid principal -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+        <!-- Productos -->
+        <section class="lg:col-span-2 bg-white rounded-lg shadow">
+            <div class="border-b p-4 font-semibold">
+                Tus ejemplares seleccionados
+            </div>
+            <div id="cart-items-container" class="divide-y">
+                <!-- JS inserta productos -->
+            </div>
+        </section>
+
+        <!-- Resumen -->
+        <aside class="bg-white rounded-lg shadow p-6 sticky top-28">
+            <h2 class="font-semibold text-lg mb-4">Resumen de Compra</h2>
+
+            <ul class="space-y-3 text-sm">
+                <li class="flex justify-between">Subtotal <span id="subtotal-value">$0</span></li>
+                <li class="flex justify-between">Envío <span id="shipping-value">$0</span></li>
+                <li class="flex justify-between">Seguro <span id="insurance-value">$0</span></li>
+                <li class="flex justify-between text-red-600">Descuento <span id="discount-value">-$0</span></li>
+                <li class="flex justify-between font-bold text-lg border-t pt-3">
+                    Total <span id="total-value">$0</span>
+                </li>
+            </ul>
+
+            <div class="mt-6 space-y-3">
+                <button class="w-full bg-green-600 text-white py-3 rounded hover:bg-green-700">
+                    Proceder al pago
+                </button>
+                <a href="tienda.html"
+                   class="block text-center border py-3 rounded hover:bg-gray-100">
+                    Seguir comprando
+                </a>
+            </div>
+
+            <div class="mt-6">
+                <label class="text-sm font-medium">¿Tienes un cupón?</label>
+                <div class="flex mt-2">
+                    <input id="coupon-input" type="text"
+                           class="flex-1 border rounded-l px-3 py-2"
+                           placeholder="Ingresa tu código">
+                    <button id="apply-coupon-btn"
+                            class="bg-gray-700 text-white px-4 rounded-r hover:bg-gray-800">
+                        Aplicar
+                    </button>
+                </div>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-[oklch(68.1%_0.162_75.834)] text-white-300 py-10">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-5 gap-6">
+    <div>
+      <h4 class="font-bold text-white mb-4">CowShop</h4>
+      <p class="text-white">Excelencia ganadera y bienestar animal.</p>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Enlaces</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="text-white hover:text-white">Catálogo</a></li>
+        <li><a href="#" class="text-white hover:text-white">Planes</a></li>
+        <li><a href="#" class="text-white hover:text-white">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Contacto</h4>
+      <p class="text-white">📍 Bogotá, Colombia</p>
+      <p class="text-white">📧 soporte@cowshop.com</p>
+      <p class="text-white">📞 305 802 8088</p>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Síguenos</h4>
+      <div class="flex gap-4 text-xl">
+        <i class="fab fa-facebook text-[#1877F2] transition duration-200 hover:scale-110 cursor-pointer"></i>
+        <i class="fab fa-instagram text-[#E4405F] transition duration-200 hover:scale-110 cursor-pointer"></i>
+        <i class="fab fa-whatsapp text-[#25D366] transition duration-200 hover:scale-110 cursor-pointer"></i>
+      </div>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Medios de Pago</h4>
+      <div class="flex gap-4 flex-wrap">
+        <img src="media/visa.png" alt="Visa" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/mastercard.png" alt="Mastercard" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/nequi.svg" alt="Nequi" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/daviplata.png" alt="Daviplata" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/efecty.png" alt="Efecty" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/logo-pse.webp" alt="pse" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+      </div>
+    </div>
+  </div>
+
+  <p class="text-center text-white mt-10">© 2026 CowShop. Todos los derechos reservados.</p>
+</footer>
+
+<script src="js/session.js"></script>
+<script src="js/carrito.js"></script>
+
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

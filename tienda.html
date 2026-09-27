@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CowShop - Tu tienda de ganado de confianza">
+    <title>Tienda - CowShop</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/tienda.css">
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- 🔹 HEADER -->
+    <header class="bg-white shadow fixed w-full z-50">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html">
+      <img src="media/logotipo.png" alt="CowShop" class="h-12">
+    </a>
+
+    <ul class="hidden md:flex gap-6 font-medium">
+      <li><a href="index.html" class="text-green-700 font-bold">Inicio</a></li>
+      <li><a href="tienda.html" class="hover:text-green-600">Tienda</a></li>
+      <li><a href="Nosotros.html" class="hover:text-green-600">Nosotros</a></li>
+      <li><a href="contacto.html" class="hover:text-green-600">Contacto</a></li>
+      <li><a href="planes.html" class="hover:text-green-600">Planes</a></li>
+    </ul>
+
+    <div class="flex items-center gap-4">
+      <a href="carrito.html" class="relative">
+        <i class="fas fa-shopping-cart text-xl text-green-700"></i>
+        <span class="absolute -top-2 -right-2 bg-red-600 text-xs text-white rounded-full px-1">0</span>
+      </a>
+
+      <a href="login.html" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500 transition duration-200 hover:scale-105">Iniciar sesión</a>
+      <a href="registrarse.html" class="border border-green-600 text-green-600 px-4 py-2 rounded hover:bg-green-600 hover:text-white transition duration-200 hover:scale-105">Registrarse</a>
+    </div>
+  </nav>
+</header>
+
+    <!-- 🔹 HERO -->
+     <section class="bg-green-700 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div class="text-center lg:text-left">
+                <h1 class="text-4xl lg:text-5xl font-bold mb-6">
+                    Nuestra <span class="text-yellow-300">tienda</span></h1>
+                <p class="text-green-100 text-lg mb-8">
+                Especialistas en vacas lecheras y de carne con certificados de salud
+                y bienestar animal garantizado.</p>
+
+                <div class="flex gap-4">
+                <a href="#ganados"
+                class="bg-white text-green-700 px-6 py-3 rounded font-semibold hover:bg-gray-100 transition duration-200 hover:scale-105">Ver ganados</a>
+                <a href="contacto.html" class="border border-white px-6 py-3 rounded hover:bg-white hover:text-green-700 transition duration-200 hover:scale-105">
+          Contactar asesor
+        </a>
+                </div>
+            </div>
+            <img src="media/Tienda.jpg"
+            alt="Ganado bovino" 
+            class="rounded-xl shadow-lg">
+        </div>
+     </section>
+     <!-- 🔹 CONTENIDO -->
+      <main id="ganados" class="max-w-7x1 mx-auto px-6 py-8 grid grid-cols-1 lg:grid-cols-4 gap-4">
+
+        <!--Filtros-->
+        <aside class="bg-white rounded-lg shadow px-6">
+            <h2 class="font-bold text-lg mb-4">Filtros</h2>
+            <ul class="space-y-2">
+                <li><button class="w-full text-left font-medium text-blue-600">Todas</button></li>
+                <li><button class="w-full text-left hover:text-blue-600">Lecheras</button></li>
+                <li><button class="w-full text-left hover:text-blue-600">Carne</button></li>
+                <li><button class="w-full text-left hover:text-blue-600">Doble propósito</button></li>
+                <li><button class="w-full text-left hover:text-blue-600">Terneros</button></li>
+                <li><button class="w-full text-left hover:text-blue-600">Toros</button></li>
+                </ul>
+        </aside>
+
+        <!-- PRODUCTOS -->
+    <section class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+
+        <!-- Card 1 -->
+        <article class="bg-white rounded-lg shadow p-3">
+            <img src="media/gris.jpg" class="rounded mb-4">
+            <h3 class="font-bold text-lg">Vaca Lechera</h3>
+            <p class="text-sm text-gray-600 mb-4">
+                Excelente producción y genética.
+            </p>
+            <button class="w-full bg-[oklch(62.7%_0.194_149.214)] text-white py-2 rounded hover:bg-[oklch(63%_0.162_75.834)]">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="bg-white rounded-lg shadow p-3">
+            <img src="media/gris.jpg" class="rounded mb-4">
+            <h3 class="font-bold text-lg">Vaca de Carne</h3>
+            <p class="text-sm text-gray-600 mb-4">
+                Alta calidad para carne premium.
+            </p>
+            <button class="w-full bg-[oklch(62.7%_0.194_149.214)] text-white py-2 rounded hover:bg-[oklch(63%_0.162_75.834)]">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="bg-white rounded-lg shadow p-3">
+            <img src="media/gris.jpg" class="rounded mb-4">
+            <h3 class="font-bold text-lg">Vaca Doble Propósito</h3>
+            <p class="text-sm text-gray-600 mb-4">
+                Ideal para leche y carne.
+            </p>
+            <button class="w-full bg-[oklch(62.7%_0.194_149.214)] text-white py-2 rounded hover:bg-[oklch(63%_0.162_75.834)]">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="bg-white rounded-lg shadow p-3">
+            <img src="media/gris.jpg" class="rounded mb-4">
+            <h3 class="font-bold text-lg">Ternero</h3>
+            <p class="text-sm text-gray-600 mb-4">
+                Joven y saludable para cría.
+            </p>
+            <button class="w-full bg-[oklch(62.7%_0.194_149.214)] text-white py-2 rounded hover:bg-[oklch(63%_0.162_75.834)]">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="bg-white rounded-lg shadow p-3">
+            <img src="media/gris.jpg" class="rounded mb-4">
+            <h3 class="font-bold text-lg">Toro</h3>
+            <p class="text-sm text-gray-600 mb-4">
+                Genética superior para reproducción.
+            </p>
+            <button class="w-full bg-[oklch(62.7%_0.194_149.214)] text-white py-2 rounded hover:bg-[oklch(63%_0.162_75.834)]">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="bg-white rounded-lg shadow p-3">
+            <img src="media/gris.jpg" class="rounded mb-4">
+            <h3 class="font-bold text-lg">Vaca Lechera Premium</h3>
+            <p class="text-sm text-gray-600 mb-4">
+                Máxima producción láctea.
+            </p>
+            <button class="w-full bg-[oklch(62.7%_0.194_149.214)] text-white py-2 rounded hover:bg-[oklch(63%_0.162_75.834)]">
+                Agregar al carrito
+            </button>
+        </article>
+
+    </section>
+    
+      </main>
+
+    <!-- 🔹 FOOTER -->
+     <footer class="bg-[oklch(68.1%_0.162_75.834)] text-white-300 py-10">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-5 gap-6">
+    <div>
+      <h4 class="font-bold text-white mb-4">CowShop</h4>
+      <p class="text-white">Excelencia ganadera y bienestar animal.</p>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Enlaces</h4>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="text-white hover:text-white">Inicio</a></li>
+        <li><a href="tienda.html" class="text-white hover:text-white">Tienda</a></li>
+        <li><a href="Nosotros.html" class="text-white hover:text-white">Nosotros</a></li>
+        <li><a href="contacto.html" class="text-white hover:text-white">Contacto</a></li>
+        <li><a href="planes.html" class="text-white hover:text-white">Planes</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Contacto</h4>
+      <p class="text-white">📍 Bogotá, Colombia</p>
+      <p class="text-white">📧 soporte@cowshop.com</p>
+      <p class="text-white">📞 305 802 8088</p>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Síguenos</h4>
+      <div class="flex gap-4 text-xl">
+        <i class="fab fa-facebook text-[#1877F2] transition duration-200 hover:scale-110 cursor-pointer"></i>
+        <i class="fab fa-instagram text-[#E4405F] transition duration-200 hover:scale-110 cursor-pointer"></i>
+        <i class="fab fa-whatsapp text-[#25D366] transition duration-200 hover:scale-110 cursor-pointer"></i>
+      </div>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Medios de Pago</h4>
+      <div class="flex gap-4 flex-wrap">
+        <img src="media/visa.png" alt="Visa" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/mastercard.png" alt="Mastercard" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/nequi.svg" alt="Nequi" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/daviplata.png" alt="Daviplata" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/efecty.png" alt="Efecty" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/logo-pse.webp" alt="pse" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+      </div>
+    </div>
+  </div>
+
+  <p class="text-center text-white mt-10">© 2026 CowShop. Todos los derechos reservados.</p>
+</footer>
+    <script src="js/session.js"></script>
+    <script src="js/tienda.js"></script>
+</body>
+</html>

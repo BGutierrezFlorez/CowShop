@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Usuario - CowShop</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- ================= HEADER ================= -->
+<header class="fixed top-0 w-full bg-blue-600 shadow z-50">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+    <a href="index.html">
+      <img src="media/logotipo.png" alt="CowShop Logo" class="h-10">
+    </a>
+
+    <ul class="hidden lg:flex gap-6 text-white font-medium">
+      <li><a href="index.html" class="hover:underline">Inicio</a></li>
+      <li><a href="tienda.html" class="hover:underline">Tienda</a></li>
+      <li><a href="Nosotros.html" class="hover:underline">Nosotros</a></li>
+      <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+      <li><a href="planes.html" class="hover:underline">Planes</a></li>
+    </ul>
+
+    <a href="logout.html"
+       class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900">
+      Cerrar Sesión
+    </a>
+  </nav>
+</header>
+
+<!-- ================= BIENVENIDA ================= -->
+<section class="pt-28 pb-12 text-center bg-white shadow-sm">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-3">
+      👋 ¡Bienvenido/a,
+      <span class="text-blue-600 font-semibold">Juan Pérez</span>!
+    </h2>
+    <p class="text-gray-600 text-lg">
+      Nos alegra tenerte de nuevo en <strong>CowShop</strong>. Aquí puedes gestionar tu membresía.
+    </p>
+  </div>
+</section>
+
+<!-- ================= PLANES ================= -->
+<section class="py-14">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-2">Planes de Membresía</h2>
+    <p class="text-gray-600 mb-10">Elige el plan que mejor se adapte a tus necesidades.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- PLAN BÁSICO -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="media/image-100.png" alt="Plan Básico" class="rounded-t-xl h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Básico</h3>
+          <div class="text-3xl font-bold text-blue-600 mb-4">$100.000
+            <span class="text-sm text-gray-500">/mes</span>
+          </div>
+          <ul class="space-y-2 text-sm mb-6">
+            <li><i class="fa fa-check text-green-500 mr-2"></i>Acceso a catálogo básico</li>
+            <li><i class="fa fa-check text-green-500 mr-2"></i>1 asesoría mensual por correo</li>
+            <li><i class="fa fa-check text-green-500 mr-2"></i>Certificado de salud básico</li>
+            <li><i class="fa fa-times text-red-500 mr-2"></i>Descuentos especiales</li>
+          </ul>
+          <a href="pago.html?plan=Basico"
+             class="block text-center bg-blue-600 text-white py-3 rounded hover:bg-blue-700">
+            Seleccionar plan
+          </a>
+        </div>
+      </div>
+
+      <!-- PLAN PROFESIONAL -->
+      <div class="bg-white rounded-xl shadow-lg ring-2 ring-blue-600">
+        <img src="media/plan2.jpg" alt="Plan Profesional" class="rounded-t-xl h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Profesional</h3>
+          <div class="text-3xl font-bold text-blue-600 mb-4">$150.000
+            <span class="text-sm text-gray-500">/mes</span>
+          </div>
+          <ul class="space-y-2 text-sm mb-6">
+            <li><i class="fa fa-check text-green-500 mr-2"></i>Todo lo del plan Básico</li>
+            <li><i class="fa fa-check text-green-500 mr-2"></i>Catálogo premium</li>
+            <li><i class="fa fa-check text-green-500 mr-2"></i>2 asesorías (email/llamada)</li>
+            <li><i class="fa fa-check text-green-500 mr-2"></i>10% de descuento</li>
+          </ul>
+          <a href="pago.html?plan=Profesional"
+             class="block text-center bg-blue-600 text-white py-3 rounded hover:bg-blue-700">
+            Seleccionar plan
+          </a>
+        </div>
+      </div>
+
+      <!-- PLAN PREMIUM -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="media/plan3.jpg" alt="Plan Premium" class="rounded-t-xl h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Premium</h3>
+          <div class="text-3xl font-bold text-blue-600 mb-4">$200.000
+            <span class="text-sm text-gray-500">/mes</span>
+          </div>
+          <ul class="space-y-2 text-sm mb-6">
+            <li><i class="fa fa-check text-green-500 mr-2"></i>Todo lo del plan Profesional</li>
+            <li><i class="fa fa-check text-green-500 mr-2"></i>Asesoría ilimitada</li>
+            <li><i class="fa fa-check text-green-500 mr-2"></i>1 visita técnica anual</li>
+            <li><i class="fa fa-check text-green-500 mr-2"></i>15% de descuento</li>
+          </ul>
+          <a href="pago.html?plan=Premium"
+             class="block text-center bg-blue-600 text-white py-3 rounded hover:bg-blue-700">
+            Seleccionar plan
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-gray-400 py-6 text-center">
+  <p>© 2025 CowShop - Todos los derechos reservados</p>
+</footer>
+
+<script src="js/session.js"></script>
+
+<!-- TU SCRIPT ORIGINAL (SIN CAMBIOS) -->
+<script>
+  (function() {
+    window.getAuthHeaders = function() {
+      const t = localStorage.getItem('cowshop_token');
+      return t ? { 'Authorization': 'Bearer ' + t } : {};
+    };
+
+    window.getTokenPayload = function() {
+      const t = localStorage.getItem('cowshop_token');
+      if (!t) return null;
+      try { return JSON.parse(atob(t.split('.')[1])); } catch { return null; }
+    };
+
+    const name = localStorage.getItem('cowshop_user_name');
+    const span = document.querySelector('.text-blue-600');
+    if (name && span) span.textContent = name;
+
+    const payload = window.getTokenPayload();
+    if (!payload) {
+      localStorage.removeItem('cowshop_token');
+      window.location.href = 'login.html';
+      return;
+    }
+
+    function doLogout() {
+      localStorage.removeItem('cowshop_token');
+      localStorage.removeItem('cowshop_user_name');
+      window.location.href = 'login.html';
+    }
+
+    document.querySelectorAll('a[href="logout.html"]').forEach(a =>
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        doLogout();
+      })
+    );
+  })();
+</script>
+
+</body>
+</html>

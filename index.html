@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>CowShop - Venta de Ganado Bovino de Calidad</title>
+
+  <!-- SEO -->
+  <meta name="description" content="CowShop - Tienda especializada en venta de ganado bovino de alta calidad. Vacas lecheras y de carne certificadas.">
+  <meta name="keywords" content="ganado, vacas, ganado bovino, vacas lecheras, ganado de carne">
+  <meta name="author" content="CowShop">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CowShop - Tienda de Vacas de Calidad">
+  <meta property="og:description" content="Compra ganado bovino certificado con garantía de bienestar animal">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="media/og-image.jpg">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+
+  <link rel="icon" href="media/favicon.png">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white shadow fixed w-full z-50">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html">
+      <img src="media/logotipo.png" alt="CowShop" class="h-12">
+    </a>
+
+    <ul class="hidden md:flex gap-6 font-medium">
+      <li><a href="index.html" class="text-green-700 font-bold">Inicio</a></li>
+      <li><a href="tienda.html" class="hover:text-green-600">Tienda</a></li>
+      <li><a href="Nosotros.html" class="hover:text-green-600">Nosotros</a></li>
+      <li><a href="contacto.html" class="hover:text-green-600">Contacto</a></li>
+      <li><a href="planes.html" class="hover:text-green-600">Planes</a></li>
+    </ul>
+
+    <div class="flex items-center gap-4">
+      <a href="carrito.html" class="relative">
+        <i class="fas fa-shopping-cart text-xl text-green-700"></i>
+        <span class="absolute -top-2 -right-2 bg-red-600 text-xs text-white rounded-full px-1">0</span>
+      </a>
+
+      <a href="login.html" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500 transition duration-200 hover:scale-105">Iniciar sesión</a>
+      <a href="registrarse.html" class="border border-green-600 text-green-600 px-4 py-2 rounded hover:bg-green-600 hover:text-white transition duration-200 hover:scale-105">Registrarse</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="pt-24">
+
+<!-- ================= HERO ================= -->
+<section class="bg-green-700 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl lg:text-5xl font-bold">
+        Bienvenido a <span class="text-yellow-300">CowShop</span>
+      </h1>
+      <p class="mt-6 text-lg text-green-100">
+        Vacas lecheras y de carne con certificados de salud y bienestar animal.
+      </p>
+      <div class="mt-8 flex gap-4">
+        <a href="tienda.html" class="bg-white text-green-700 px-6 py-3 rounded font-semibold hover:bg-gray-100 transition duration-200 hover:scale-105">
+          Ver ejemplares
+        </a>
+        <a href="contacto.html" class="border border-white px-6 py-3 rounded hover:bg-white hover:text-green-700 transition duration-200 hover:scale-105">
+          Contactar asesor
+        </a>
+      </div>
+    </div>
+
+    <img src="media/vacas.webp" alt="Ganado bovino" class="rounded-xl shadow-lg">
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="py-16 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">¿Por qué elegir CowShop?</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <i class="fas fa-dna text-green-600 text-4xl mb-4"></i>
+        <h3 class="font-semibold text-xl mb-2">Genética certificada</h3>
+        <p class="text-gray-600">Pedigree validado y trazabilidad completa.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <i class="fas fa-heart text-green-600 text-4xl mb-4"></i>
+        <h3 class="font-semibold text-xl mb-2">Bienestar animal</h3>
+        <p class="text-gray-600">Protocolos veterinarios certificados.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <i class="fas fa-truck text-green-600 text-4xl mb-4"></i>
+        <h3 class="font-semibold text-xl mb-2">Transporte seguro</h3>
+        <p class="text-gray-600">Logística especializada hasta tu finca.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUCTOS ================= -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Razas destacadas</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Producto -->
+      <div class="bg-gray-50 rounded-lg shadow overflow-hidden">
+        <img src="media/Holstein.webp" alt="Holstein">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">Holstein</h3>
+          <p class="text-gray-600 mb-4">Alta producción láctea.</p>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-lg">$2.800.000</span>
+            <a href="tienda.html" class="text-green-600 hover:underline transition duration-200 hover:scale-105">Ver</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 rounded-lg shadow overflow-hidden">
+        <img src="media/Angus.webp" alt="Angus">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">Angus Negro</h3>
+          <p class="text-gray-600 mb-4">Carne premium certificada.</p>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-lg">$3.500.000</span>
+            <a href="tienda.html" class="text-green-600 hover:underline transition duration-200 hover:scale-105">Ver</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 rounded-lg shadow overflow-hidden">
+        <img src="media/Simmental.webp" alt="Simmental">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">Simmental</h3>
+          <p class="text-gray-600 mb-4">Doble propósito.</p>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-lg">$3.200.000</span>
+            <a href="tienda.html" class="text-green-600 hover:underline transition duration-200 hover:scale-105">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="bg-green-700 text-white py-16">
+  <div class="max-w-3xl mx-auto text-center px-6">
+    <h2 class="text-3xl font-bold mb-4">¿Listo para mejorar tu hato ganadero?</h2>
+    <p class="mb-8 text-green-100">Nuestros asesores están listos para ayudarte.</p>
+    <div class="flex justify-center gap-4">
+      <a href="contacto.html" class="bg-white text-green-700 px-6 py-3 rounded font-semibold hover:bg-gray-100 transition duration-200 hover:scale-105">Contactar</a>
+      <a href="tienda.html" class="border border-white px-6 py-3 rounded hover:bg-white hover:text-green-700 transition duration-200 hover:scale-105">Explorar</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-[oklch(68.1%_0.162_75.834)] text-white-300 py-10">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-5 gap-6">
+    <div>
+      <h4 class="font-bold text-white mb-4">CowShop</h4>
+      <p class="text-white">Excelencia ganadera y bienestar animal.</p>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Enlaces</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="text-white hover:text-white">Catálogo</a></li>
+        <li><a href="#" class="text-white hover:text-white">Planes</a></li>
+        <li><a href="#" class="text-white hover:text-white">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Contacto</h4>
+      <p class="text-white">📍 Bogotá, Colombia</p>
+      <p class="text-white">📧 soporte@cowshop.com</p>
+      <p class="text-white">📞 305 802 8088</p>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Síguenos</h4>
+      <div class="flex gap-4 text-xl">
+        <i class="fab fa-facebook text-[#1877F2] transition duration-200 hover:scale-110 cursor-pointer"></i>
+        <i class="fab fa-instagram text-[#E4405F] transition duration-200 hover:scale-110 cursor-pointer"></i>
+        <i class="fab fa-whatsapp text-[#25D366] transition duration-200 hover:scale-110 cursor-pointer"></i>
+      </div>
+    </div>
+
+    <div>
+      <h4 class="font-bold text-white mb-4">Medios de Pago</h4>
+      <div class="flex gap-4 flex-wrap">
+        <img src="media/visa.png" alt="Visa" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/mastercard.png" alt="Mastercard" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/nequi.svg" alt="Nequi" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/daviplata.png" alt="Daviplata" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/efecty.png" alt="Efecty" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+        <img src="media/logo-pse.webp" alt="pse" class="h-6 w-auto object-contain transition duration-200 hover:scale-105">
+      </div>
+    </div>
+  </div>
+
+  <p class="text-center text-white mt-10">© 2026 CowShop. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
